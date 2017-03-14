@@ -7,7 +7,7 @@ $finish = 1024;
  
 $host = '192.168.1.103'; // Target IP // Hedef IP
  
-for($port = $from; $port <= $to ; $port++)
+for($port = $start; $port <= $finish ; $port++)
 {
   $fsp = fsockopen($host , $port);
   if ($fsp)
